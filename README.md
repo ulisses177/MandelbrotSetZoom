@@ -1,24 +1,24 @@
-# MandelbrotSetZoom
-A Python script that generates a zoom animation of the Mandelbrot  set, a famous fractal in mathematics. The animation creates a  series of PNG frames, each showing a different portion of the  Mandelbrot set at increasingly higher magnification.
-* Generates Mandelbrot sets using the `mandelbrot` function
-* Creates a 2D array representing the Mandelbrot set using the 
-`mandelbrot_set` function
-* Plots the Mandelbrot set as an image using Matplotlib's `imshow`
-function
-* Saves frames to PNG files for animation creation
-* Combines frames into a single video file using FFmpeg
+# Mandelbrot Set Visualization
 
-**Usage:**
+This project visualizes the Mandelbrot Set using OpenGL and GLFW. It includes functionalities for smooth zooming and panning, allowing you to explore the intricate details of the Mandelbrot Set interactively.
 
-1. Clone this repository to your local machine
-2. Run the script using Python (e.g., `python mandelbrot.py`)
-3. Adjust parameters in the script as needed (e.g., zoom factor, 
-number of frames)
-4. View the resulting animation in a video player or image viewer
+## Features
 
-**License:**
+- **Smooth Zooming**: Use the mouse scroll wheel to zoom in and out smoothly.
+- **Drag-and-Drop Panning**: Click and hold the left mouse button to drag and move the view around.
+- **High-Resolution Rendering**: Dynamically adjusts the resolution based on the zoom level to ensure high-quality rendering.
 
-This software is released under the MIT License.
+## Requirements
+
+- Python 3.x
+- OpenGL
+- GLFW
+- NumPy
+
+You can install the required packages using pip:
+
+```sh
+pip install glfw PyOpenGL numpy
 
 **Authors:**
 
@@ -29,3 +29,4 @@ This software is released under the MIT License.
 * 1.0: Initial release
 * 1.1: Added FFmpeg support for combining frames into a single 
 video file
+* 2.0: Changed it to use openGL shaders and use the cursor to navegate the set.
